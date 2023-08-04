@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>API Example</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -17,10 +16,42 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="quoteContainer">
-      <div id="quote"></div>
-      <div id="author"></div>
+    <!-- Uses Bootstrap classes to handle styling. Learn more about Bootstrap at https://getbootstrap.com! -->
+    <div class="bg-light p-5 flex-fill">
+      <h1>Where-ther ☁️</h1>
+      <p>What's the weather like at a particular location?</p>
+
+      <!-- Sets up the form used on the page to gather the latitude and longitude. -->
+      <form>
+        <div class="row">
+          <div class="col">
+            <label for="latitude" class="form-label">Latitude</label>
+            <input type="number" class="form-control" id="latitude" />
+
+            <div class="my-3">
+              <input type="submit" class="btn btn-primary" />
+            </div>
+          </div>
+          <div class="col">
+            <label for="longitude" class="form-label">Longitude</label>
+            <input type="number" class="form-control" id="longitude" />
+          </div>
+        </div>
+      </form>
     </div>
-    <script src="js/main.js" type="module"></script>
+
+    <div class="p-5">
+      <h1 id="place"></h1>
+      <h2 id="condition"></h2>
+      <p id="temperature"></p>
+      <p id="precipitation"></p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
