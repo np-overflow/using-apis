@@ -1,4 +1,4 @@
-const API_KEY = "1cd1434466a5160cf16decf3fc7d7d60"; // Replace this with your API key!
+const API_KEY = "API_KEY"; // Replace this with your API key!
 
 document.querySelector("form").addEventListener("submit", (e) => {
   e.preventDefault(); // Prevents the page from reloading
